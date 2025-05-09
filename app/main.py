@@ -32,4 +32,3 @@ def create_person_list(people: list) -> list:
         if wife in Person.people or husband in Person.people:
             Person.people[person["name"]].set_wife_husband(wife, husband)
     return person_list
-
