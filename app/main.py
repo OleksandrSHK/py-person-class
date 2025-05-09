@@ -12,10 +12,10 @@ class Person:
     def set_wife_husband(self, wife: str, husband: str) -> None:
         if wife in Person.people:
             wife = Person.people[wife]
-            wife.husband = husband
+            wife.husband = self
         if husband in Person.people:
             husband = Person.people[husband]
-            husband.wife = wife
+            husband.wife = self
 
 
 def create_person_list(people: list) -> list:
